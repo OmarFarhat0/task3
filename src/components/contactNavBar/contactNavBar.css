@@ -1,0 +1,41 @@
+.contactNavBar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ecf0f19a;
+  padding: 11px 5%;
+}
+
+.contactNavBar .cardsContainer,
+.contactNavBar .iconsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactNavBar .cardsContainer .navContactCard {
+  margin-right: 30px;
+}
+
+.contactNavBar .iconsContainer .item {
+  background-color: #cdcdcd;
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.contactNavBar .iconsContainer .item a {
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 877px) {
+  .contactNavBar {
+    display: none;
+  }
+}

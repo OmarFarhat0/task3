@@ -1,0 +1,58 @@
+.allMainFeatureCard {
+  height: fit-content;
+  box-shadow: 0 0 15px #6f73755b;
+  border: 1px solid #ecf0f1;
+  padding: 35px 0;
+  border-radius: 12px;
+}
+
+.allMainFeatureCard .mainFeatureCard {
+  background-color: white;
+  padding: 0 30px;
+}
+
+.allMainFeatureCard .mainFeatureCard .content {
+  display: flex;
+}
+
+.allMainFeatureCard .mainFeatureCard hr {
+  margin: 30px 0;
+  border: 1px solid #ecf0f19a;
+}
+
+.allMainFeatureCard .mainFeatureCard img {
+  margin-right: 26px;
+}
+
+.allMainFeatureCard .mainFeatureCard p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+}
+
+.allMainFeatureCard .mainFeatureCard p:nth-of-type(2) {
+  color: #6f7375bb;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  .allMainFeatureCard .mainFeatureCard p:nth-of-type(1) {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .allMainFeatureCard {
+    padding: 30px 0;
+  }
+  .allMainFeatureCard .mainFeatureCard p:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .allMainFeatureCard .mainFeatureCard hr {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

@@ -1,0 +1,84 @@
+.propertiesFilter {
+  text-align: center;
+  padding: 125px 0;
+  padding-top: 125px;
+}
+
+.propertiesFilter .btnFilter {
+  padding: 0 3% 35px 3%;
+}
+
+.propertiesFilter .btnFilter button {
+  padding: 11px 2.2%;
+  margin: 0 1.7% 1.7% 0;
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.propertiesFilter .btnPages {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propertiesFilter .btnPages button {
+  border: none;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  margin: 0 12px 12px 0;
+  width: 40px;
+  height: 40px;
+}
+
+.propertiesFilter .btnPages button:last-of-type {
+  font-size: 9px;
+}
+
+/*  */
+.propertiesFilter button:hover,
+.propertiesFilter button.active {
+  background-color: #f35525;
+}
+
+.propertiesFilter .properties {
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  .propertiesFilter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .propertiesFilter .btnFilter {
+    padding-bottom: 20px;
+  }
+  .propertiesFilter .btnPages {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .propertiesFilter {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .propertiesFilter .btnPages {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .propertiesFilter {
+    padding: 80px 0 50px 0;
+  }
+}

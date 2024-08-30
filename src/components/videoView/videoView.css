@@ -1,0 +1,65 @@
+.videoView {
+  text-align: center;
+  --heightVideo: 410px;
+}
+
+.videoView .blockTop {
+  background-image: url("/public/images/videoView/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  height: 640px;
+}
+
+.videoView .blockTop .info h2 {
+  color: #f07264;
+  font-size: 15px;
+}
+
+.videoView .blockTop .info h3 {
+  width: 25%;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 0 75px 0;
+}
+
+.videoView .blockTop .video {
+  width: 100%;
+}
+
+.videoView .blockBottom {
+  position: relative;
+
+  padding-top: calc(
+    120px + var(--heightVideo) - var(--heightVideo) / 1.75
+  ); /*120px + video remain part*/
+  padding-bottom: 120px;
+}
+
+.videoView .blockBottom .video video {
+  width: 70%;
+  margin: 0 auto;
+  height: var(--heightVideo);
+  top: calc(-1 * var(--heightVideo) / 1.75);
+
+  object-fit: cover;
+  border-radius: 12px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.videoView .blockBottom .containerCards {
+  padding: 0 10%;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

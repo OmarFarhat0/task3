@@ -1,0 +1,102 @@
+.navbar .bigScreenContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .ulLargeScreen ul {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-align: center;
+}
+
+.navbar .ulLargeScreen ul li {
+  list-style-type: none;
+  font-size: 15px;
+  margin: 0 30px;
+}
+
+.navbar .ulLargeScreen ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar .ulLargeScreen ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .ulLargeScreen ul li a:hover,
+.navbar ul li a.activeNav {
+  color: #f35525;
+}
+
+.navbar .ulLargeScreen button {
+  padding: 10px 20px 10px 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  font-size: 14px;
+}
+
+.navbar .ulLargeScreen button::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #f35525;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar .icon {
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+
+.navbar .ulSmallSreen,
+.navbar .icon {
+  display: none;
+}
+
+@media (max-width: 877px) {
+  .navbar {
+    padding-bottom: 10px;
+  }
+  .navbar .icon {
+    display: block;
+  }
+  .navbar .ulLargeScreen {
+    display: none;
+  }
+  .navbar .bigScreenContainer {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .navbar .ulSmallSreen.active {
+    display: block;
+    text-align: center;
+  }
+  .navbar .ulSmallSreen ul li {
+    list-style: none;
+    line-height: 2.4;
+  }
+  .navbar .ulSmallSreen a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar .ulSmallSreen a:hover {
+    color: #f35525;
+  }
+}

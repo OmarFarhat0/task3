@@ -1,0 +1,40 @@
+.headRoutePage {
+  background-image: url("/public/images/headRoutePage/page-heading-bg.jpg");
+  padding: 105px 0;
+}
+
+.headRoutePage p:nth-of-type(1) {
+  background-color: white;
+  width: fit-content;
+  padding: 10px 27px;
+  font-weight: 500;
+  left: 50%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.headRoutePage p:nth-of-type(2) {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .headRoutePage p:nth-of-type(1) {
+    padding: 9px 5px;
+  }
+  .headRoutePage p:nth-of-type(2) {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .headRoutePage p:nth-of-type(2) {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

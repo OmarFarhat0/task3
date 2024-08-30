@@ -1,0 +1,32 @@
+.allQuestionList .questionList li {
+  list-style: none;
+  background-color: #eff4f55e;
+}
+
+.allQuestionList .questionList li p {
+  padding: 15px 20px;
+  font-size: 17px;
+}
+
+.allQuestionList .questionList li p:nth-of-type(1) {
+  font-weight: 600;
+  color: #f35525;
+  background: none;
+  border: none;
+}
+
+.allQuestionList .questionList li hr {
+  border: 1px solid #ecf0f1;
+}
+
+@media (max-width: 480px) {
+  .allQuestionList .questionList li p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

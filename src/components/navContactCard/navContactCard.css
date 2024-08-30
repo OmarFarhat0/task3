@@ -1,0 +1,20 @@
+.navContactCard {
+  width: fit-content;
+}
+
+.navContactCard .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navContactCard .container p:nth-of-type(1) {
+  margin-right: 10px;
+  color: #f35525;
+  font-size: 27px;
+}
+
+.navContactCard .container p:nth-of-type(2) {
+  color: #575353;
+  font-size: 16px;
+}

@@ -1,0 +1,71 @@
+.allPreAchieveCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10%;
+}
+
+.allPreAchieveCard .previousAchievementCard {
+  background-color: #ffeee9;
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.allPreAchieveCard .previousAchievementCard::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #f35525;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.allPreAchieveCard .previousAchievementCard .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 13%;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.allPreAchieveCard .previousAchievementCard p:nth-child(1) {
+  color: #f35525;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.allPreAchieveCard .previousAchievementCard p:nth-child(2) {
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 16px;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  .allPreAchieveCard {
+    display: block;
+  }
+  .allPreAchieveCard .previousAchievementCard {
+    margin-bottom: 30px;
+  }
+  .allPreAchieveCard .previousAchievementCard p:nth-child(1) {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .allPreAchieveCard {
+    grid-template-columns: auto auto;
+    gap: 15%;
+  }
+  .allPreAchieveCard .previousAchievementCard p:nth-child(1) {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

@@ -1,0 +1,54 @@
+.allfeaturesDealCard {
+  height: fit-content;
+  box-shadow: 0 0 15px #6f73755b;
+  padding: 25px 0;
+  border: 1px solid #ecf0f1;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.allfeaturesDealCard .featuresDealCard {
+  padding: 0 10%;
+}
+
+.allfeaturesDealCard .featuresDealCard p {
+  color: #6f7375;
+  font-size: 15px;
+}
+
+.allfeaturesDealCard .featuresDealCard p span {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.allfeaturesDealCard .featuresDealCard hr {
+  border: 1px solid #ecf0f19a;
+  margin: 25px 0;
+}
+
+@media (max-width: 480px) {
+  .allfeaturesDealCard {
+    text-align: center;
+  }
+  .allfeaturesDealCard .featuresDealCard {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .allfeaturesDealCard {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .allfeaturesDealCard {
+    text-align: center;
+  }
+  .allfeaturesDealCard .featuresDealCard p span {
+    display: block;
+    margin: 0;
+  }
+}

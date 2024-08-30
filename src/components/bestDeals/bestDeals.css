@@ -1,0 +1,146 @@
+.bestDeal {
+  background-color: #ecf0f1;
+  padding: 100px 0;
+}
+
+.bestDeal .container {
+  margin: 0 7%;
+}
+
+.bestDeal h2 {
+  color: #e74c3c;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.bestDeal .introduce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.bestDeal .introduce div:nth-of-type(1) {
+  /*title section container*/
+  width: 35%;
+}
+
+.bestDeal .introduce h3 {
+  font-size: 42px;
+}
+
+.bestDeal .introduce .btnOpetions {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+  height: 0;
+}
+
+.bestDeal .introduce .btnOpetions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bestDeal .introduce .btnOpetions button:hover,
+.bestDeal .introduce .btnOpetions .active {
+  background-color: #f35525;
+}
+
+@media (max-width: 480px) {
+  .bestDeal {
+    padding: 50px 0;
+  }
+
+  .bestDeal .introduce {
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .bestDeal .introduce div:nth-of-type(1) {
+    /*title section container*/
+    width: 100%;
+  }
+  .bestDeal .introduce h2 {
+    text-align: center;
+  }
+  .bestDeal .introduce h3 {
+    font-size: 35px;
+    padding-bottom: 40px;
+  }
+  .bestDeal .introduce .btnOpetions {
+    display: block;
+    height: 100%;
+  }
+  .bestDeal .introduce .btnOpetions {
+    text-align: center;
+    height: 100%;
+  }
+  .bestDeal .introduce .btnOpetions button {
+    margin: 8px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .bestDeal {
+    padding: 70px 0;
+  }
+
+  .bestDeal h2 {
+    text-align: center;
+  }
+  .bestDeal .introduce {
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .bestDeal .introduce div:nth-of-type(1) {
+    /*title section container*/
+    width: 65%;
+    margin: 0 auto;
+  }
+  .bestDeal .introduce h3 {
+    font-size: 35px;
+  }
+
+  .bestDeal .introduce .btnOpetions {
+    text-align: center;
+    height: 100%;
+    padding: 15px 0;
+  }
+  .bestDeal .introduce .btnOpetions button {
+    margin: 8px 0;
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bestDeal {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+  }
+  .bestDeal .container {
+    margin: 0 2%;
+  }
+  .bestDeal .introduce {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .bestDeal .introduce div:nth-of-type(1) {
+    /*title section container*/
+    width: 50%;
+    margin: 0 auto;
+  }
+  .bestDeal .introduce h3 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
